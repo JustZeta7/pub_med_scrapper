@@ -1,6 +1,4 @@
-## Coded by JESIN BESCHI RAJ ##
-##  JUSTZETA ##
-## instagram - @jesin_the_just ##
+## Coded by JUSTZETA ##
 
 
 from bs4 import BeautifulSoup as bs #used for scrapping the website
@@ -65,8 +63,6 @@ def scrape(srchTxt,pgCount):
     for items in abstractUrls:
         abstract.append(getAbstract(items))
       
-    zipped=zip(title,author,cite,abstract) 
-    
     pages=pages+1
     url="https://pubmed.ncbi.nlm.nih.gov/?term="+searchText+"&page="+str(pages)
     
